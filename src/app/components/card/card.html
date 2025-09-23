@@ -1,15 +1,15 @@
-<a href="./film_pandorum.html" class="content-cards__item">
+<a [routerLink]="['/film', film.id]" class="content-cards__item">
     <div class="content-cards__item--img">
-        <img src="/home/arvasily/Документы/netkliks-app/public/images/pandorum.jpg" alt="pandorum">
+        <img [src]="film.Image" [alt]="film.title">
     </div>
     <div class="content-cards__item--title">
-        <h5>Пандорум,</h5>
-        <span>Pandorum 2009</span>
+        <h5>{{film.title}},</h5>
+        <span>{{film.original}}</span>
     </div>
     <p class="content-cards__item--description">
-        ужасы, фантастика, боевик, триллер, детектив
+        {{film.category}}
     </p>
     <p class="content-cards__item--rating">
-        7.1
+        {{film.rating}}
     </p>
 </a>

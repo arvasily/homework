@@ -1,6 +1,6 @@
 import { Sidebar } from "../models/sidebar.models";
 
-export const FILMS: Sidebar[] = [
+export const RECOMEND: Sidebar[] = [
     {
         category: 'Топ-250',
         title: 'Подборка фильмов и сериалов с наивысшими оценками зрителей'
